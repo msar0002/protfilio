@@ -1,0 +1,148 @@
+body {
+    background-color: #494848;
+    color: #ffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.navbar-nav {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar-nav li a {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar.navbar-expand-lg {
+    background-color: #353535;
+}
+
+.aboutMeBTN {
+    position: absolute;
+    left: 185px;
+    bottom: 280px;
+    border: 1px solid red;
+    padding: 15px 20px;
+    color: red;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+.aboutMeBTN.hovered {
+    border: 1px solid #fff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.submitbtn {
+    margin: auto;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    border: 1px solid red;
+    padding: 15px 20px;
+    color: red;
+    font-size: 22px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-top-btn:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.scaleImg {
+    transition: 0.7s;
+}
+
+.scaleImg:hover {
+    transform: scale(0.9);
+    filter: grayscale(1);
+}
+
+.title-logo {
+    max-width: 85px;
+    margin: 0px 10px 0px 0px;
+}
+
+.about-me-section, .experience-section {
+    background-color: #494848 !important;
+}
+
+.main-title {
+    color: #929191;
+}
+
+.image {
+    max-width: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutMeBTN {
+        display: none;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar-expand-lg .container-fluid {
+        justify-content: center;
+    }
+
+    .titlesection {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .aboutMeBTN {
+        display: none;
+    }
+
+    .titlesection {
+        justify-content: center;
+    }
+
+    .navbar-expand-lg .container-fluid {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .headerSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headerSection img {
+        max-width: 250px;
+        margin: 0px 30px 0px 0px;
+    }
+}
+
+.experience-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
